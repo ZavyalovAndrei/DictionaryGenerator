@@ -5,8 +5,8 @@ public class Main {
             "qui dat gratias parvum vobis gaudium";
 
     public static void main(String[] args) {
-        AddToDictionary addToDictionary = new AddToDictionary();
-        List <String> dictionary = (List<String>) addToDictionary.apply(SOURCE_TEXT);
+        ToDictionary toDictionary = new ToDictionary();
+        List <String> dictionary = toDictionary.add.apply(SOURCE_TEXT);
         dictionary.forEach(System.out::println);
     }
 }
